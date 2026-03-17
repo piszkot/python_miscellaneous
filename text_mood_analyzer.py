@@ -5,8 +5,8 @@
 # - Neutral — polarity between -0.1 and 0.1
 # Results are printed in a formatted table showing the (truncated) text, sentiment label, and absolute polarity score.
 
-# 1. Activate the virtual environment: source venv/bin/activate
-# 2. Ensure textblob and corpora are installed: pip install textblob, python - m textblob.download_corpora
+# 1. Activate the virtual environment: python3 -m venv venv && source venv/bin/activate
+# 2. Ensure textblob and corpora are installed: pip install textblob && python - m textblob.download_corpora
 # 3. Run the script (using 'python', which points to the correct version in venv): python text_mood_analyzer.py
 
 from textblob import TextBlob
