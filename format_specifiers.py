@@ -24,8 +24,14 @@ print(f"{name:.3}")    # → "hel"          (truncation)
 
 print("\n*** MISC ***\n")
 
+# PERCENTAGES:
 print(f"{0.25:%}")      # → 25.000000%   (percentage)
 print(f"{0.25:.1%}")    # → 25.0%
-print(f"{'tekst'!r}")   # → 'tekst'       (repr())
-print(f"{'tekst'!s}")   # → tekst         (str(), default)
-print(f"{'tekst'!a}\n")   # → 'tekst'       (ascii())
+
+# RAW STRINGS:
+print(f"{'line1\nline2   '!r}")  # → 'line1\\nline2   ', spaces visible
+print(f"{'line1\nline2'!s}")   # → tekst         (str(), default)
+
+# ASCII:
+print(f"{'za\u017c\xf3\u0142\u0107'!a}")   # → 'tekst'       (ascii())
+print(f"{'za\u017c\xf3\u0142\u0107'}\n")   # → 'tekst'       (ascii())
