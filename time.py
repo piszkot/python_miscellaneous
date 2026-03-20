@@ -1,3 +1,6 @@
+# Demonstrations of time.sleep() usage in Python:
+# basic pausing, countdown, retry logic, loading bar, polling, and a timer.
+
 import time
 import threading
 
