@@ -17,7 +17,7 @@ fruits[0] = "avocado"         # change element by index
 print()
 print("List:", fruits)
 print("First item:", fruits[0])
-print("Sliced:", fruits[1:3])
+print("Sliced[1:3]:", fruits[1:3])
 
 
 # ── SET ───────────────────────────────────────────────
