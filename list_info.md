@@ -16,4 +16,4 @@ For `list`, the payload consists of its length, a pointer to the data buffer, an
 | `allocated`    | 8 bytes      | number of slots allocated (capacity)             |
 | **Object**     | **40 bytes** | always, for any `list` object                    |
 | **Elements**   | **n × 8 bytes** | one pointer per element (n = current length) |
-| **Total**      | **40 + n × 8 bytes** | grows linearly with the number of items  |
+| **Total**      | **40 + (n × 8 bytes**) | grows linearly with the number of items  |
